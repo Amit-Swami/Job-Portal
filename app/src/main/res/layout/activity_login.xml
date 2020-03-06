@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginrootlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Login">
+<android.support.v7.widget.Toolbar android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    app:popupTheme="@style/AppTheme.PopupOverlay"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@+id/logbackpress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/leftarrow"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login or Register"
+        android:layout_marginLeft="40dp"
+        android:textSize="20sp"
+        android:textColor="#ffffff"/>
+
+</android.support.v7.widget.Toolbar>
+
+<android.support.v7.widget.CardView
+    android:id="@+id/cardview"
+    android:layout_below="@id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/edtphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile Number"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@color/Denim"
+            android:inputType="phone"
+            app:met_maxCharacters="10"
+            android:textSize="16sp"
+            app:met_singleLineEllipsis="true"
+            />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtpassw"
+            android:layout_below="@id/edtphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@color/Denim"
+            android:inputType="textPassword"
+            android:textSize="15sp"
+            app:met_singleLineEllipsis="true"
+            />
+        <com.rey.material.widget.CheckBox
+            android:id="@+id/ckbremember"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/edtpassw"
+            android:layout_height="wrap_content"
+            style="@style/Material.Drawable.CheckBox"
+            android:text="Remember me"
+            android:gravity="center_vertical"
+            android:textColor="@color/Denim"
+            app:cbd_strokeColor="@color/Denim"
+            app:cbd_tickColor="#ffffff"
+            />
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/Login"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Login"
+            android:layout_below="@id/ckbremember"
+            app:fButtonColor="@color/Blue"
+            android:textColor="#ffffff"
+            app:cornerRadius="0dp"
+            app:shadowEnabled="false"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jobs.com"
+            android:layout_gravity="center"
+            android:textSize="35sp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_below="@id/Login"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/fontdrifttype"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"/>
+
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
+
+    <RelativeLayout
+        android:layout_below="@id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/registertext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/Denim"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="@string/register_with_job" />
+
+    </RelativeLayout>
+</RelativeLayout>

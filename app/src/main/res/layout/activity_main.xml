@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainrootlayout"
+    tools:context=".MainActivity"
+    android:background="@drawable/jobseekerlogo">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B3000000">
+
+    </RelativeLayout>
+
+
+    <com.tomer.fadingtextview.FadingTextView
+        android:id="@+id/headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:fontFamily="@font/goingforward"
+        android:textColor="@color/Denim"
+        app:texts="@array/title"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:textAllCaps="false"
+        app:timeout="500"/>
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="520dp">
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btnRegister"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:text="Register"
+            android:layout_margin="8dp"
+            app:fButtonColor="@color/Blue"
+            android:textColor="#ffffff"
+            app:cornerRadius="0dp"
+            app:shadowEnabled="false"
+            />
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btnLogin"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:text="Login"
+            android:layout_margin="8dp"
+            app:fButtonColor="#ffffff"
+            android:textColor="@color/Blue"
+            app:cornerRadius="0dp"
+            app:shadowEnabled="false"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/linearlayout1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/fasteraccesstv"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:text="@string/mainactivityquotes"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_gravity="center"
+            android:fontFamily="@font/goingforward"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

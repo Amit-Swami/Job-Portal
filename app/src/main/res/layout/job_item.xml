@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="4dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/job_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textStyle="bold"
+            android:textColor="#000"
+
+            />
+        <TextView
+            android:id="@+id/job_compname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Company name"
+            android:layout_below="@id/job_title"
+            android:textColor="#000"
+            />
+        <ImageView
+            android:id="@+id/job_imgexp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/job_compname"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/experience"/>
+        <TextView
+            android:id="@+id/job_experience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Experience"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/job_compname"
+            android:layout_toEndOf="@id/job_imgexp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/lightblack"
+            />
+        <ImageView
+            android:id="@+id/job_imgloc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/job_imgexp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/location"/>
+        <TextView
+            android:id="@+id/job_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/job_experience"
+            android:layout_toEndOf="@id/job_imgloc"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/lightblack"
+          />
+
+        <ImageView
+            android:id="@+id/job_imgskills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/job_imgloc"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/skills"/>
+        <TextView
+            android:id="@+id/job_skills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skills"
+            android:layout_marginTop="7dp"
+            android:layout_below="@id/job_location"
+            android:layout_toEndOf="@id/job_imgskills"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/lightblack"
+         />
+
+        <ImageView
+            android:id="@+id/job_image"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_launcher_background"
+            />
+        <ImageView
+            android:id="@+id/job_savedjob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/job_skills"
+            android:src="@drawable/ic_star_border_black_24dp"
+            />
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

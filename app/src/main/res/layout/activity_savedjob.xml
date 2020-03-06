@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/swipe_layoutsaved"
+    android:layout_height="match_parent"
+    tools:context=".Joblist">
+    <RelativeLayout
+        android:id="@+id/savedjob_rootlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar android:id="@+id/jobtoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView
+            android:id="@+id/logbackpresssavedjob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/leftarrow"/>
+        <TextView
+            android:id="@+id/savedjobtoolbartv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saved Job"
+            android:layout_marginLeft="40dp"
+            android:textSize="20sp"
+            android:textColor="#ffffff"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_savedjob"
+        android:layout_below="@id/jobtoolbar"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

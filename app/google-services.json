@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "337830214494",
+    "firebase_url": "https://jobscandidate-dd223.firebaseio.com",
+    "project_id": "jobscandidate-dd223",
+    "storage_bucket": "jobscandidate-dd223.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:337830214494:android:e5018f71cda6d93b",
+        "android_client_info": {
+          "package_name": "com.example.jobscandidate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "337830214494-d3v874k7n9uqtft429migr93cjefo8h3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jobscandidate",
+            "certificate_hash": "a90e83de2b00d4da4bd1b6f75407dbb33325f6ca"
+          }
+        },
+        {
+          "client_id": "337830214494-j9v5c3od68893ve9m7rljafqbk759qb5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIHegYejuV7fryfhh-4ROH4fjC4WiAWPs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "337830214494-j9v5c3od68893ve9m7rljafqbk759qb5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
