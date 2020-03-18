@@ -65,7 +65,7 @@
             android:layout_toEndOf="@id/job_imgloc"
             android:layout_marginLeft="15dp"
             android:textColor="@color/lightblack"
-            />
+          />
 
         <ImageView
             android:id="@+id/job_imgskills"
@@ -84,7 +84,7 @@
             android:layout_toEndOf="@id/job_imgskills"
             android:layout_marginLeft="15dp"
             android:textColor="@color/lightblack"
-            />
+         />
 
         <ImageView
             android:id="@+id/job_image"
@@ -92,6 +92,14 @@
             android:layout_height="25dp"
             android:layout_alignParentRight="true"
             android:src="@drawable/ic_launcher_background"
+            />
+        <ImageView
+            android:id="@+id/job_savedjob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/job_skills"
+            android:src="@drawable/ic_star_border_black_24dp"
             />
     </RelativeLayout>
 

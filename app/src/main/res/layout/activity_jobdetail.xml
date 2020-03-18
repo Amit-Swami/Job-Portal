@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Jobdetail"
+    android:background="@color/darkwhite">
+
+    <android.support.v7.widget.Toolbar android:id="@+id/jobdetailtoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView
+            android:id="@+id/logbackpressjobdetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/leftarrow"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jobs Description"
+            android:layout_marginLeft="40dp"
+            android:textSize="20sp"
+            android:textColor="#ffffff"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/relative2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="0.1dp"
+        android:background="@color/colorPrimary"
+        android:layout_below="@id/jobdetailtoolbar"
+        android:padding="15dp">
+       <TextView
+           android:id="@+id/jobd_title"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Title"
+           android:textSize="20dp"
+           android:textColor="#fff"/>
+        <TextView
+            android:id="@+id/jobd_compname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Company Name"
+            android:textColor="@color/darkwhite"
+            android:layout_below="@id/jobd_title"/>
+
+        <ImageView
+            android:id="@+id/jobd_image"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_launcher_background"/>
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@id/relative2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relative3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative2"
+            android:background="@color/snowwhite"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/jobdexp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/experience" />
+
+            <TextView
+                android:id="@+id/jobd_experience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_toEndOf="@id/jobdexp"
+                android:text="Experience" />
+
+            <ImageView
+                android:id="@+id/jobdloc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jobdexp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/location" />
+
+            <TextView
+                android:id="@+id/jobd_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jobd_experience"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/jobdexp"
+                android:text="Location" />
+
+            <ImageView
+                android:id="@+id/jobdskills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/jobdloc"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/skills" />
+
+            <TextView
+                android:id="@+id/jobd_skills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jobd_location"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_toEndOf="@id/jobdexp"
+                android:text="Skills" />
+
+            <ImageView
+                android:id="@+id/jobdvacancy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jobd_skills"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/vacancy" />
+
+            <TextView
+                android:id="@+id/jobd_vacancy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jobd_skills"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_toEndOf="@id/jobdvacancy"
+                android:text="" />
+
+            <ImageView
+                android:id="@+id/jobdsalary"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/jobdvacancy"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/salary" />
+
+            <TextView
+                android:id="@+id/jobd_salary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jobd_vacancy"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_toEndOf="@id/jobdsalary"
+                android:text="" />
+
+            <ImageView
+                android:id="@+id/jobdpostdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/jobdsalary"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/postdate" />
+
+            <TextView
+                android:id="@+id/jobd_postdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jobd_salary"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_toEndOf="@id/jobdpostdate"
+                android:text="PostDate" />
+
+            <TextView
+                android:id="@+id/jobdwalkinTnD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jobdpostdate"
+                android:layout_marginTop="25dp"
+                android:text="Time &amp; Venue"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/jobd_walkinTnD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jobdwalkinTnD"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/jobdjobdescrip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jobd_walkinTnD"
+                android:layout_marginTop="15dp"
+                android:text="Job Description"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/jobd_jobdescrip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jobdjobdescrip"
+                android:text="Job Description" />
+
+            <TextView
+                android:id="@+id/jobdindustrytype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jobd_jobdescrip"
+                android:layout_marginTop="15dp"
+                android:text="Industry Type"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/jobd_industrytype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jobdindustrytype"
+                android:text="Industry Type" />
+
+            <TextView
+                android:id="@+id/jobdfunctionalarea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jobd_industrytype"
+                android:layout_marginTop="15dp"
+                android:text="Functinal Area"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/jobd_functionalarea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jobdfunctionalarea"
+                android:text="Functinal Area" />
+
+            <TextView
+                android:id="@+id/jobdrole"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jobd_functionalarea"
+                android:layout_marginTop="15dp"
+                android:text="Role"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/jobd_role"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jobdrole"
+                android:text="Role" />
+
+            <TextView
+                android:id="@+id/jobdemploytype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jobd_role"
+                android:layout_marginTop="15dp"
+                android:text="Employment Type"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/jobd_employtype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jobdemploytype"
+                android:text="Employment Type" />
+
+            <TextView
+                android:id="@+id/jobdDesiredcp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jobd_employtype"
+                android:layout_marginTop="15dp"
+                android:text="Desired Candidate Profile"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/jobd_desiredcp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jobdDesiredcp"
+                android:text="Desired candidate profile" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jobd_desiredcp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="50dp"
+                android:background="@color/darkwhite"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/jobdcompdescrip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Company Description"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/jobdcompname2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jobdcompdescrip"
+                    android:layout_marginTop="10dp"
+                    android:text="Company Name:" />
+
+                <TextView
+                    android:id="@+id/jobd_compname2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jobdcompdescrip"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@id/jobdcompname2"
+                    android:text="company name" />
+
+                <TextView
+                    android:id="@+id/jobdwebsite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jobd_compname2"
+                    android:layout_marginTop="10dp"
+                    android:text="Company Website:" />
+
+                <TextView
+                    android:id="@+id/jobd_website"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jobd_compname2"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@id/jobdwebsite"
+                    android:text="Not Mentioned" />
+
+                <TextView
+                    android:id="@+id/jobd_compdescrip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jobdwebsite"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jobd_compdescrip"
+                    android:layout_margin="15dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/contactdetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="CONTACT DETAILS"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20sp" />
+
+                        <View
+                            android:id="@+id/contactview"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@id/contactdetail"
+                            android:background="@color/colorPrimary" />
+
+                        <ImageView
+                            android:id="@+id/contactuseriv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/contactview"
+                            android:layout_margin="15dp"
+                            android:src="@drawable/user" />
+
+                        <TextView
+                            android:id="@+id/jobd_hrname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/contactview"
+                            android:layout_marginTop="15dp"
+                            android:layout_toEndOf="@id/contactuseriv"
+                            android:text="Not Mentioned" />
+
+                        <ImageView
+                            android:id="@+id/contactiv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/contactuseriv"
+                            android:layout_margin="15dp"
+                            android:src="@drawable/contact" />
+
+                        <TextView
+                            android:id="@+id/jobd_hrcontact"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/jobd_hrname"
+                            android:layout_marginTop="25dp"
+                            android:layout_toEndOf="@id/contactiv"
+                            android:text="Not Mentioned" />
+
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/apply"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="APPLY"
+        app:fButtonColor="@color/Blue"
+        android:textColor="#ffffff"
+        app:cornerRadius="0dp"
+        app:shadowEnabled="false"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        />
+</RelativeLayout>

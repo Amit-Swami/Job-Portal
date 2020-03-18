@@ -2,11 +2,11 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/mainrootlayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/mainrootlayout"
     tools:context=".MainActivity"
-    android:background="@drawable/jobrecruiterlogo">
+    android:background="@drawable/jobseekerlogo">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -14,6 +14,7 @@
         android:background="#B3000000">
 
     </RelativeLayout>
+
 
     <com.tomer.fadingtextview.FadingTextView
         android:id="@+id/headline"
@@ -43,8 +44,8 @@
             android:layout_height="40dp"
             android:text="Register"
             android:layout_margin="8dp"
-            app:fButtonColor="#ffffff"
-            android:textColor="@color/Blue"
+            app:fButtonColor="@color/Blue"
+            android:textColor="#ffffff"
             app:cornerRadius="0dp"
             app:shadowEnabled="false"
             />
@@ -55,8 +56,8 @@
             android:layout_height="40dp"
             android:text="Login"
             android:layout_margin="8dp"
-            app:fButtonColor="@color/Blue"
-            android:textColor="#ffffff"
+            app:fButtonColor="#ffffff"
+            android:textColor="@color/Blue"
             app:cornerRadius="0dp"
             app:shadowEnabled="false"
             />
@@ -75,8 +76,8 @@
             android:layout_height="wrap_content"
             android:text="@string/mainactivityquotes"
             android:textSize="20sp"
-            android:textColor="#ffffff"
             android:textStyle="bold"
+            android:textColor="#ffffff"
             android:layout_gravity="center"
             android:fontFamily="@font/goingforward"
             />
@@ -84,6 +85,7 @@
 
 
     </LinearLayout>
+
 
 
 </RelativeLayout>

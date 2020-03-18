@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/registerrootlayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Register">
@@ -40,17 +41,18 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Jobs.com"
-                android:layout_gravity="center"
-                android:textSize="35sp"
-                android:textColor="@color/colorPrimary"
-                android:textStyle="bold"
-                android:fontFamily="@font/fontdrifttype"
-                android:layout_marginBottom="20dp"
-                android:layout_marginTop="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jobs.com"
+            android:layout_gravity="center"
+            android:textSize="35sp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:fontFamily="@font/fontdrifttype"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"/>
+
         </LinearLayout>
 
     </android.support.v7.widget.CardView>
@@ -68,18 +70,18 @@
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp">
 
-            <com.rengwuxian.materialedittext.MaterialEditText
-                android:layout_marginTop="20dp"
-                android:id="@+id/edtregname"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Full Name"
-                app:met_floatingLabel="highlight"
-                app:met_primaryColor="@color/Denim"
-                android:inputType="text"
-                android:textSize="16sp"
-                app:met_singleLineEllipsis="true"
-                />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/edtregname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@color/Denim"
+            android:inputType="text"
+            android:textSize="16sp"
+            app:met_singleLineEllipsis="true"
+            />
             <com.rengwuxian.materialedittext.MaterialEditText
                 android:layout_marginTop="10dp"
                 android:id="@+id/edtregemail"

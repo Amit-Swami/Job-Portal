@@ -2,12 +2,12 @@
 <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/swipe_joblistlayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/swipe_joblistlayout"
     tools:context=".Joblist">
     <RelativeLayout
-        android:id="@+id/rootLayout"
+        android:id="@+id/joblistrootlayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     <android.support.v7.widget.Toolbar android:id="@+id/jobtoolbar"
@@ -41,17 +41,6 @@
         android:layout_height="match_parent">
 
     </android.support.v7.widget.RecyclerView>
-
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/joblistfab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_margin="@dimen/fab_margin"
-        android:backgroundTint="@color/colorPrimary"
-        android:src="@drawable/ic_playlist_add_black_24dp" />
 
 </RelativeLayout>
 </android.support.v4.widget.SwipeRefreshLayout>

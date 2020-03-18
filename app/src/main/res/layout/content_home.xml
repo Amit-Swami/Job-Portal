@@ -9,13 +9,30 @@
     tools:context=".Home"
     tools:showIn="@layout/app_bar_home">
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/catrecyclerview"
-        android:scrollbars="vertical"
-        android:layout_marginTop="15dp"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
-    </android.support.v7.widget.RecyclerView>
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/cattextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BROWSE JOBS BY CATEGORY"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/catrecyclerview"
+            android:scrollbars="vertical"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/cattextview"
+            >
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+
+
 
 </android.support.v4.widget.SwipeRefreshLayout>
